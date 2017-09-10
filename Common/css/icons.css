@@ -1,0 +1,40 @@
+/* line 80, icons/*.png */
+.icons-sprite, .icons-gplus, .icons-linkedin, .icons-pintrest, .icons-products, .icons-tw {
+  background-image: url('../images/icons-sff1af2eea1.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-gplus {
+  background-position: 0 -23px;
+  height: 23px;
+  width: 27px;
+}
+
+/* line 84, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-linkedin {
+  background-position: 0 0;
+  height: 23px;
+  width: 27px;
+}
+
+/* line 84, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-pintrest {
+  background-position: 0 -69px;
+  height: 23px;
+  width: 26px;
+}
+
+/* line 84, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-products {
+  background-position: 0 -92px;
+  height: 30px;
+  width: 24px;
+}
+
+/* line 84, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-tw {
+  background-position: 0 -46px;
+  height: 23px;
+  width: 26px;
+}

@@ -1,0 +1,81 @@
+@import "../../bourbon/_bourbon";
+@import "functions";
+
+.font100 {
+  font-family: $font100;
+}
+
+.font300 {
+  font-family: $font300;
+}
+
+.font500 {
+  font-family: $font500;
+}
+
+.font700 {
+  font-family: $font700;
+}
+
+.font900 {
+  font-family: $font900;
+}
+
+.color-red {
+  color: $red;
+}
+
+.color-lt-black {
+  color: $lt-black;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.tac {
+  text-align: center;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tar {
+  text-align: right;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.ttn {
+  text-transform: none;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.vam {
+  vertical-align: middle;
+}
+
+@for $i from 1 through 100 {
+  .font-size-#{$i} {
+    font-size: #{$i}px;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
+
+}

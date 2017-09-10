@@ -1,0 +1,129 @@
+$font100: 'Museo Sans 100';
+$font300: 'Tahoma';
+$font500: 'Museo Sans 500';
+$font700: 'Museo Sans 700';
+$font900: 'Museo Sans 900';
+$grey: #bdc3c6;
+$light-grey: #f9fafa;
+$lt-black: #243841;
+$red: #ec0e1d;
+$dark-red: #b81721;
+//color: #243841;
+
+//181818
+
+////////////mixins////////////////
+@mixin overlay($z-index, $isFixed) {
+
+  @if $isFixed == true {
+
+    position: fixed; // if width is not passed, or empty do this
+
+  } @else {
+    position: absolute;
+
+  }
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  @if ($z-index !="") {
+    z-index: $z-index
+  }
+}
+
+@mixin absolute($top, $right, $bottom, $left) {
+  position: absolute;
+  @if ($left != "") {
+    left: $left;
+  }
+  @if ($top != "") {
+    top: $top;
+  }
+  @if ($bottom != "") {
+    bottom: $bottom;
+
+  }
+  @if ($right != "") {
+    right: $right;
+  }
+}
+
+@mixin fixed($top, $right, $bottom, $left) {
+  position: fixed;
+  @if ($left != "") {
+    left: $left;
+  }
+  @if ($top != "") {
+    top: $top;
+  }
+  @if ($bottom != "") {
+    bottom: $bottom;
+
+  }
+  @if ($right != "") {
+    right: $right;
+  }
+}
+
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin border($width, $color) {
+  border: $width solid $color;
+  -webkit-box-sizing: border-box;
+}
+
+@mixin content($width, $height, $top, $right, $bottom, $left) {
+  content: "";
+  @include widthHeight($width, $height);
+  @include absolute($top, $right, $bottom, $left)
+
+}
+
+@mixin verticalCenter() {
+  @include absolute(50%, "", "", 50%);
+  max-width: 100%;
+  max-height: 100%;
+  @include transform(translate(-50%, -50%))
+}
+
+@mixin topCenter() {
+  top: 50%;
+  position: absolute;
+
+  @include transform(translateY(-50%))
+}
+
+@mixin breakpoint($media) {
+  @if $media == tablet-l {
+    @media only screen and (max-width: 1100px) {
+      @content;
+    }
+  } @else if $media == tablet-p {
+    @media only screen and (max-width: 900px) {
+      @content;
+    }
+
+  } @else if $media == mobile {
+    @media only screen and (max-width: 767) {
+      @content;
+    }
+  }
+
+}
+
+//$columns: 13;
+//
+//@for $i from 1 through $columns {
+//  .ipad-image-#{$i} {
+//    background: url(../Images/image-ipad-#{$i}.jpg) no-repeat 0 0;
+//    //z-index: #{14-$i};
+//
+//  }
+//}
+
+////////////mixins////////////////

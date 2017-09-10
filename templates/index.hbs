@@ -1,0 +1,56 @@
+---
+title_en: Home
+showInNav: true
+navSortOrder: 0
+layout: default.hbs
+---
+
+<div id="wrap">
+<section>
+    <div class="container">
+        <div class="row">
+    {{#parseJSON '{"imagePath": "../Common/images/vlisco-campaign.jpg", "title": "Vlisco", "copy": "E-commerce with a colourful story"}'}}
+        {{> blockwidgets }}
+    {{/parseJSON}}
+
+    {{#parseJSON '{"imagePath": "../Common/images/airport.jpg", "title": "Copenhagen Airports", "copy":"Knowing Your Customer in the Digital Age"}'}}
+        {{> blockwidgets }}
+    {{/parseJSON}}
+
+    {{#parseJSON '{"imagePath": "../Common/images/chromecast.jpg", "title": "TV4 Play", "copy": "From TV channel to leading content provider"}'}}
+        {{> blockwidgets }}
+    {{/parseJSON}}
+        </div>
+        <div class="row">
+
+    {{#parseJSON '{"imagePath": "../Common/images/audi.jpg", "title": "Audi City", "copy": "How to purchase a real car in a virtual store"}'}}
+        {{> blockwidgets }}
+    {{/parseJSON}}
+
+    {{#parseJSON '{"imagePath": "../Common/images/cow.jpg", "title": "Arla Foods", "copy": "Dairy production in Big Data"}'}}
+        {{> blockwidgets }}
+    {{/parseJSON}}
+
+    {{#parseJSON '{"imagePath": "../Common/images/pexels.jpg", "title": "Xylem", "copy": "Helping the world’s largest water technology provider solve the global water crisis through Business Transformation."}'}}
+        {{> blockwidgets }}
+    {{/parseJSON}}
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <div class="slideback">
+
+        </div>
+        <h2>Sidebar</h2>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Donec id augue interdum, faucibus velit quis, sodales lorem.</li>
+            <li>Donec in tortor vel enim consectetur tincidunt.</li>
+            <li>Suspendisse nec sem consequat, vestibulum sem laoreet, sollicitudin dolor.</li>
+            <li>In porta urna vitae massa auctor, luctus hendrerit ipsum iaculis.</li>
+        </ul>
+    </div>
+
+</section>
+</div>
+<div id="push"></div>

@@ -1,0 +1,44 @@
+{
+  "name": "assemble-example",
+  "description": "Example Assemble project.",
+  "version": "0.1.1",
+  "homepage": "https://github.com/jonschlinkert/assemble-example",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonschlinkert/assemble-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/assemble-example/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/assemble-example/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "handlebars-helpers": "^0.8.0"
+  },
+  "devDependencies": {
+    "assemble": "~0.4.37",
+    "grunt": "~0.4.3",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.1.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-pagespeed": "^2.0.1",
+    "grunt-sass": "^1.1.0",
+    "grunt-tinypng": "^0.6.1",
+    "grunt-zip": "^0.17.1"
+  },
+  "keywords": []
+}

@@ -1,0 +1,42 @@
+@import "../../bourbon/_bourbon";
+@import "functions";
+header{
+  float: left;
+  width: 100%;
+  nav{
+    background:#00a5d3;
+    color: #FFF;
+    ul{
+      list-style: none;
+      li{
+        list-style: none;
+        display: inline-block;
+        font:normal 15px $font300;
+        text-transform: uppercase;
+
+        &.active{
+          a{
+            border: solid 1px #FFF;
+            border-radius:5px;
+          &:hover{
+            color: #FFF;
+          }
+          }
+        }
+        a{
+          color: #FFF;
+          padding: 10px 15px;
+          display: inline-block;
+          text-decoration: none !important;
+          &:hover{
+
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<title>
+    {{#is language "en"}}
+        {{title_en}}
+    {{else}}
+        {{title_ar}}
+    {{/is}}
+</title>
+
+{{#is production "true"}}
+    {{#is language "en"}}
+        <link rel="stylesheet" href="../Common/css/app.min.css?v={{version}}">
+    {{else}}
+        <link rel="stylesheet" href="../Common/css/app-ar.min.css?v={{version}}">
+    {{/is}}
+{{else}}
+    <link rel="stylesheet" href="../Common/css/style.css?v={{version}}">
+    {{#is language "ar"}}
+        <link rel="stylesheet" href="../Common/css/style_ar.css?v={{version}}">
+    {{/is}}
+
+
+{{/is}}
+
+
+
+
