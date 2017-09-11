@@ -123,7 +123,7 @@ module.exports = function (grunt) {
                 separator: ';'
             },
             dist: {
-                src: ['Common/js/jquery/jquery-1.10.1.min.js', 'Common/js/lib/*.js', 'Common/js/default.js'],
+                src: ['Common/js/jquery/jquery-3.2.1.min.js', 'Common/js/lib/*.js', 'Common/js/default.js'],
                 dest: 'Common/js/app.min.js'
             }
         },
